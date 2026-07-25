@@ -1,7 +1,14 @@
-.errorText {
+.error {
     text-align: center;
-    color: #ffffff;
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 1.5;
+}
+
+.error-main {
+  color: color: #ffffff;;
+}
+
+.error-solution {
+  color: #c8b949;
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./SearchBar.css";
 
-export default function SearchBar({ onSearch }) {
+export default function SearchBar({ onSearch, loading }) {
     const [username, setUsername] = useState("");
 
     function handleSearchClick() {
@@ -20,8 +20,16 @@ export default function SearchBar({ onSearch }) {
                 placeholder="Search github username..."
                 value={username}
                 onChange={e => setUsername(e.target.value)}
+                onKeyDown={e => {
+                    if (e.key === "Enter") {
+                        handleSearchClick();
+                    }
+                }}
             />
-            <button className="searchButton" onClick={handleSearchClick}>
+            <button 
+              className="searchButton" 
+              onClick={handleSearchClick}
+              disabled={loading}>
                 🔍
             </button>
         </div>

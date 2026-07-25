@@ -6,14 +6,14 @@
 }
 
 .container {
-    width: min(420px, 95%);
+    width: min(550px, 95%);
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
     margin-top: 35px;
-
     display: flex;
     justify-content: center;
 }
-

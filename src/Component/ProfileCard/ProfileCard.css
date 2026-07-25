@@ -1,5 +1,5 @@
 .profileCard {
-    width: 100%;
+    width: min(420px, 100%);
     background: #1b2027;
     border: 2px solid #3d4450;
     border-radius: 28px;

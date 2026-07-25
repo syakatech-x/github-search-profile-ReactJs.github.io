@@ -43,7 +43,7 @@ export default function App() {
         <div className="app">
             <main className="container">
                 <Header />
-                <SearchBar onSearch={handleSearch} />
+                <SearchBar onSearch={handleSearch} loading={loading} />
                 <div className="content">{textContent}</div>
             </main>
         </div>

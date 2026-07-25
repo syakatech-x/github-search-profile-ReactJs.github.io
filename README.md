@@ -1,16 +1,114 @@
-# React + Vite
+GitHub Search Profile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that allows users to search for any GitHub profile using the GitHub REST API.
 
-Currently, two official plugins are available:
+This project was built to practice React fundamentals, component architecture, asynchronous data fetching, and state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+«Note: This project was developed entirely on an Android phone as part of my learning journey.»
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Features
 
-## Expanding the ESLint configuration
+- Search any GitHub username
+- Display profile information
+- Loading state
+- Error handling
+- Empty state
+- Responsive card layout
+- Direct link to GitHub profile
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+Built With
+
+- React
+- JavaScript (ES6+)
+- CSS3
+- Fetch API
+- GitHub REST API
+
+---
+
+Project Structure
+
+Project Structure
+
+- src/
+  - Component/
+    - Header
+    - SearchBar
+    - EmptyState
+    - Loading
+    - ErrorMessage
+    - ProfileCard
+  - Services/
+    - githubApi.js
+  - App.jsx
+  - App.CSS3
+
+---
+
+What I Learned
+
+Through this project I practiced:
+
+- React Components
+- Props
+- useState
+- Conditional Rendering
+- Async / Await
+- Fetch API
+- Error Handling
+- Loading State
+- Component Separation
+- Folder Structure
+- Working with External APIs
+
+---
+
+API
+
+This project uses the GitHub REST API.
+
+https://api.github.com/users/{username}
+
+Authentication is supported using a GitHub Personal Access Token to avoid API rate limits.
+
+---
+
+Future Improvements
+
+- Search by pressing Enter
+- Better responsive design
+- Dark / Light theme
+- Copy profile URL
+- Recent search history
+
+---
+
+Screenshot
+
+![display full app](src/assets/full-mock-up-githubSearchProfile.png)
+![display partial app](src/assets/mock-up-githubSearchProfile.png)
+![ui tree and dependency map](src/assets/ui-tree-and-dependency-map.png)
+
+---
+
+Author
+
+Syaka
+
+Aspiring Software Engineer from Indonesia.
+
+Currently learning:
+
+- React
+- Next.js
+- Node.js
+- Express.js
+- MongoDB
+
+---
+
+«Stay curious. Keep building.»

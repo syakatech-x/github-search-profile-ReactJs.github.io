@@ -1,3 +1,5 @@
+import "./ProfileCard.css"
+
 export default function ProfileCard({ profile }) {
     return (
         <div className="profileCard">
@@ -8,9 +10,11 @@ export default function ProfileCard({ profile }) {
                 alt={profile.login}
             />
             <h4 className="username">{profile.login}</h4>
-            <h5 className="name">@{profile.name}</h5>
+            <h5 className="name">
+                {profile.name ? `@${profile.name}` : "No Name"}
+            </h5>
             <p className="bio">{profile.bio || "No Bio Available."}</p>
-            <div>
+            <div className="stats">
                 <p className="followers">
                     👥{profile.followers}
                     <br />

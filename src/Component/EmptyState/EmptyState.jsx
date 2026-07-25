@@ -1,3 +1,5 @@
+import "./EmptyState.css"
+
 export default function EmptyState() {
     return (
         <p className="emptyState">

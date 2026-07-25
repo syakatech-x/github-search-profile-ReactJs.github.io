@@ -1,8 +1,11 @@
+import "./Header.css";
+
 export default function Header() {
     return (
-        <header>
-            <h1 className="title">
-                <span>Github</span> Search Profile
+        <header className="header">
+            <h1>
+                <span className="green">Github</span> Search Profile
+                <span className="icon">👤</span>
             </h1>
         </header>
     );

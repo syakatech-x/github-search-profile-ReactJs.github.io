@@ -1,0 +1,10 @@
+.emptyState {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+.emptyState span {
+    color: #a0a7b5;
+    font-weight: 600;
+}
